@@ -26,3 +26,7 @@
 .bg-dark{
   background-color: #343a40;
 }
+
+.row{
+  display: flex;
+}

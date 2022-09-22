@@ -4,18 +4,16 @@
       <h2>User info</h2>
       <%= form_with model: @User do |f| %>
       
-      <div class="form-group">
-        <h4>Name</h4>
-        <%= f.text_field :name %>
+      <div class="form-group">Name
+        <%= f.text_field :name, class: "form-control name" %>
       </div>
       
-      <div class="form-group">
-        <%= f.file_field :image, accept: "image/*" %>
+      <div class="form-group">image
+        <%= f.file_field :profile_image, accept: "image/*", class: "form-control-file user-image" %>
       </div>
       
-      <div class="form-group">
-        <h4>introduction</h4>
-        <%= f.text_area :introduction %>
+      <div class="form-group">Introduction
+        <%= f.text_area :introduction, class: "form-control introduction" %>
       </div>
       
       <div class="form-group">

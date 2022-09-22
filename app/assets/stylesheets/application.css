@@ -30,3 +30,7 @@
 .row{
   display: flex;
 }
+
+.form_group{
+  margin-bottom: 1rem;
+}

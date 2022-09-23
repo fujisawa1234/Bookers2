@@ -14,23 +14,3 @@
  *= require_self
  */
 
-* ::after, ::before {
- box-sizing: border-box;
-}
-
-.navbar-nav{
-  display: block;
-  list-style: none;
-}
-
-.bg-dark{
-  background-color: #343a40;
-}
-
-.row{
-  display: flex;
-}
-
-.form_group{
-  margin-bottom: 1rem;
-}

@@ -1,6 +1,5 @@
 class Book < ApplicationRecord
   belongs_to :user
-  has_many :post_images
   
   has_one_attached :profile_image
   

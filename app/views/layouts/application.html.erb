@@ -17,7 +17,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
           <%= link_to "Bookers", root_path, class: "navbar-brand"%>
-          
+
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -52,7 +52,7 @@
             <%end%>
           </li>
           <li>
-            <%= link_to homes_about_path, class: 'nav-link text-light' do %>
+            <%= link_to home_about_path, class: 'nav-link text-light' do %>
               <i class="fa-solid fa-link"></i>About
             <%end%>
           </li>
@@ -72,7 +72,7 @@
         </div>
       </nav>
     </header>
-    
+
     <main>
       <% if flash[:notice] %>
         <div class="flash">
@@ -81,7 +81,7 @@
       <% end %>
       <%= yield %>
     </main>
-  
+
     <footer>
       <div class="container mt-5">
         <div class="row">

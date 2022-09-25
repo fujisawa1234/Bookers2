@@ -34,7 +34,7 @@ class BooksController < ApplicationController
     if @book.user == current_user
       render :edit
     else
-      redirect_to :top
+      redirect_to books_path
     end
   end
 
@@ -58,6 +58,6 @@ class BooksController < ApplicationController
   private
 
   def book_params
-    params.require(:book).permit(:title, :opinion)
+    params.require(:book).permit(:title, :body)
   end
 end

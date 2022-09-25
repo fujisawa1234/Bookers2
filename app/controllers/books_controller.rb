@@ -26,7 +26,6 @@ class BooksController < ApplicationController
     @books = Book.all
     @book = Book.find(params[:id])
     @user = @book.user
-    @newbook = Book.new
   end
 
   def edit
